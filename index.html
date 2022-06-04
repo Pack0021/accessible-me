@@ -16,15 +16,15 @@
   <div class="container">
     <div class="site-header">
       <h1>Jam Box Studios</h1>
-      <div class="main-nav">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">Reservation</a></li>
-          <li><a href="#">Studio</a></li>
+      <nav class="main-nav">
+        <ul itemscope itemtype="https://schema.org/Person">
+          <li itemprop="Home"><a href="#">Home</a></li>
+          <li itemprop="Products"><a href="#">Products</a></li>
+          <li itemprop="Reservation"><a href="#">Reservation</a></li>
+          <li itemprop="Studio"><a href="#">Studio</a></li>
         </ul>
-      </div>
-      <img src="https://placekitten.com/1200/900" class="banner">
+      </nav>
+      <img src="https://placekitten.com/1200/900" alt="picture-of-cat" class="banner">
     </div>
     <div class="main-content">
       <h1>Welcome to Jam Box</h1>
@@ -32,7 +32,7 @@
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto error voluptatibus.</p>
       <div class="owner">
         <h1>Meet the owner</h1>
-        <ul>
+        <ul itemscope itemtype="https://schema.org/Person">
           <li>Name: John Doe</li>
           <li>Title: CEO</li>
           <li>Email: johnjoe@jambox.ca</li>
@@ -51,7 +51,9 @@
         <form action="thanks.html">
           <label>Full Name</label>
           <input type="text" placeholder="Full Name">
+          <label>Email</label>
           <input type="text" placeholder="Email">
+          <label>Subject</label>
           <input type="text" placeholder="Subject">
           <b>Your Message</b>
           <textarea></textarea>
@@ -59,9 +61,10 @@
         </form>
       </div>
     </div>
-    <div class="site-footer">
+    <a class="top" href="#">Return To Top</a>
+    <footer>
       &copy; 2021 Jam Box Studios
-    </div>
+    </footer>
   </div>
 </body>
 
